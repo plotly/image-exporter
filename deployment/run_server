@@ -2,10 +2,6 @@
 
 fc-cache -v /usr/share/fonts/user
 
-if [[ $PLOTLY_CUSTOM_FONTS_ENABLED = true ]]; then
-  fc-cache -v /usr/share/fonts/customer
-fi
-
 if [[ $PLOTLY_IMAGESERVER_IGNORE_CERT_ERRORS = true ]]; then
   ORCA_IGNORECERTERRORS_ARG="--ignore-certificate-errors"
 fi
